@@ -13,7 +13,7 @@ import uploadRoutes from './routes/upload.routes.js';
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 3010;
+const PORT = parseInt(process.env.PORT || '3010', 10);
 
 // CORS
 const allowedOrigins = [
